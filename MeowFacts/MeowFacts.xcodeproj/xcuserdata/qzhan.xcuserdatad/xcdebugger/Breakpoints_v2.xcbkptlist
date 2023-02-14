@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "BA7598A3-236C-41AF-9B66-C59CAD8CEAAF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D87CE34E-C92A-4B38-8A5B-79301CA87CE4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MeowFacts/Module/Interactor/MeowFactsInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchKitten()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D87CE34E-C92A-4B38-8A5B-79301CA87CE4 - b0a0e1e4d4a41ca8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async -&gt; () in MeowFacts.MeowFactsInteractor.fetchKitten() -&gt; ()"
+                  moduleName = "MeowFacts"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qzhan/Desktop/MeowFacts/MeowFacts/Module/Interactor/MeowFactsInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "576">
+               </Location>
+               <Location
+                  uuid = "D87CE34E-C92A-4B38-8A5B-79301CA87CE4 - cdb6c71364c77ad5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) await resume partial function for closure #1 @Sendable () async -&gt; () in MeowFacts.MeowFactsInteractor.fetchKitten() -&gt; ()"
+                  moduleName = "MeowFacts"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qzhan/Desktop/MeowFacts/MeowFacts/Module/Interactor/MeowFactsInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "422">
+               </Location>
+               <Location
+                  uuid = "D87CE34E-C92A-4B38-8A5B-79301CA87CE4 - 4a0831a1722818d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in MeowFacts.MeowFactsInteractor.fetchKitten() -&gt; ()"
+                  moduleName = "MeowFacts"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qzhan/Desktop/MeowFacts/MeowFacts/Module/Interactor/MeowFactsInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "293">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C6C9E75-DC84-4E1C-8DD0-60DC9E52289C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MeowFacts/Module/ViewController/MeowFactsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "showKitten()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08CBF987-210F-48E5-86D6-C7424513E162"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MeowFacts/Module/MeowFactsNetworkingService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "fetchKittenImage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF228AAD-4C96-4D49-91DC-F9E9E58BE26E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MeowFacts/Module/MeowFactsNetworkingService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "fetchKittenImage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FF228AAD-4C96-4D49-91DC-F9E9E58BE26E - 2f9e83bc210333ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MeowFacts.NetworkService.fetchKittenImage() async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "MeowFacts"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qzhan/Desktop/MeowFacts/MeowFacts/Module/MeowFactsNetworkingService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1484">
+               </Location>
+               <Location
+                  uuid = "FF228AAD-4C96-4D49-91DC-F9E9E58BE26E - 2f9e83bc210333ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MeowFacts.NetworkService.fetchKittenImage() async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "MeowFacts"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qzhan/Desktop/MeowFacts/MeowFacts/Module/MeowFactsNetworkingService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1604">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFB6A5E3299AECC800A84F4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A5E2299AECC800A84F4E /* AppDelegate.swift */; };
+		FFB6A5E5299AECC800A84F4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A5E4299AECC800A84F4E /* SceneDelegate.swift */; };
+		FFB6A5EA299AECC800A84F4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB6A5E8299AECC800A84F4E /* Main.storyboard */; };
+		FFB6A5EC299AECCD00A84F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB6A5EB299AECCD00A84F4E /* Assets.xcassets */; };
+		FFB6A5EF299AECCD00A84F4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB6A5ED299AECCD00A84F4E /* LaunchScreen.storyboard */; };
+		FFB6A5FA299AECCD00A84F4E /* MeowFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A5F9299AECCD00A84F4E /* MeowFactsTests.swift */; };
+		FFB6A604299AECCD00A84F4E /* MeowFactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A603299AECCD00A84F4E /* MeowFactsUITests.swift */; };
+		FFB6A606299AECCD00A84F4E /* MeowFactsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A605299AECCD00A84F4E /* MeowFactsUITestsLaunchTests.swift */; };
+		FFB6A618299AF26100A84F4E /* MeowFactsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A617299AF26100A84F4E /* MeowFactsInteractor.swift */; };
+		FFB6A61A299AF28100A84F4E /* MeowFactsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A619299AF28100A84F4E /* MeowFactsPresenter.swift */; };
+		FFB6A61C299AF2A000A84F4E /* MeowFactsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A61B299AF2A000A84F4E /* MeowFactsRouter.swift */; };
+		FFB6A61E299AF2BB00A84F4E /* MeowFactsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A61D299AF2BB00A84F4E /* MeowFactsProtocols.swift */; };
+		FFB6A626299AF39000A84F4E /* MeowFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A624299AF39000A84F4E /* MeowFactsViewController.swift */; };
+		FFB6A627299AF39000A84F4E /* MeowFactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB6A625299AF39000A84F4E /* MeowFactsViewController.xib */; };
+		FFB6A62A299AF3DA00A84F4E /* MeowFactsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A629299AF3DA00A84F4E /* MeowFactsEntity.swift */; };
+		FFB6A62C299B0DF700A84F4E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A62B299B0DF700A84F4E /* Constants.swift */; };
+		FFB6A62E299B10C800A84F4E /* MeowFactsNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A62D299B10C800A84F4E /* MeowFactsNetworkingService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFB6A5F6299AECCD00A84F4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFB6A5D7299AECC800A84F4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFB6A5DE299AECC800A84F4E;
+			remoteInfo = MeowFacts;
+		};
+		FFB6A600299AECCD00A84F4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFB6A5D7299AECC800A84F4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFB6A5DE299AECC800A84F4E;
+			remoteInfo = MeowFacts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFB6A5DF299AECC800A84F4E /* MeowFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeowFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB6A5E2299AECC800A84F4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFB6A5E4299AECC800A84F4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FFB6A5E9299AECC800A84F4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFB6A5EB299AECCD00A84F4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFB6A5EE299AECCD00A84F4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFB6A5F0299AECCD00A84F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB6A5F5299AECCD00A84F4E /* MeowFactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeowFactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB6A5F9299AECCD00A84F4E /* MeowFactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsTests.swift; sourceTree = "<group>"; };
+		FFB6A5FF299AECCD00A84F4E /* MeowFactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeowFactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB6A603299AECCD00A84F4E /* MeowFactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsUITests.swift; sourceTree = "<group>"; };
+		FFB6A605299AECCD00A84F4E /* MeowFactsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FFB6A617299AF26100A84F4E /* MeowFactsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsInteractor.swift; sourceTree = "<group>"; };
+		FFB6A619299AF28100A84F4E /* MeowFactsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsPresenter.swift; sourceTree = "<group>"; };
+		FFB6A61B299AF2A000A84F4E /* MeowFactsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsRouter.swift; sourceTree = "<group>"; };
+		FFB6A61D299AF2BB00A84F4E /* MeowFactsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsProtocols.swift; sourceTree = "<group>"; };
+		FFB6A624299AF39000A84F4E /* MeowFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsViewController.swift; sourceTree = "<group>"; };
+		FFB6A625299AF39000A84F4E /* MeowFactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeowFactsViewController.xib; sourceTree = "<group>"; };
+		FFB6A629299AF3DA00A84F4E /* MeowFactsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsEntity.swift; sourceTree = "<group>"; };
+		FFB6A62B299B0DF700A84F4E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FFB6A62D299B10C800A84F4E /* MeowFactsNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsNetworkingService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFB6A5DC299AECC800A84F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB6A5F2299AECCD00A84F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB6A5FC299AECCD00A84F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFB6A5D6299AECC800A84F4E = {
+			isa = PBXGroup;
+			children = (
+				FFB6A5E1299AECC800A84F4E /* MeowFacts */,
+				FFB6A5F8299AECCD00A84F4E /* MeowFactsTests */,
+				FFB6A602299AECCD00A84F4E /* MeowFactsUITests */,
+				FFB6A5E0299AECC800A84F4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFB6A5E0299AECC800A84F4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFB6A5DF299AECC800A84F4E /* MeowFacts.app */,
+				FFB6A5F5299AECCD00A84F4E /* MeowFactsTests.xctest */,
+				FFB6A5FF299AECCD00A84F4E /* MeowFactsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFB6A5E1299AECC800A84F4E /* MeowFacts */ = {
+			isa = PBXGroup;
+			children = (
+				FFB6A612299AF13E00A84F4E /* Module */,
+				FFB6A5E2299AECC800A84F4E /* AppDelegate.swift */,
+				FFB6A5E4299AECC800A84F4E /* SceneDelegate.swift */,
+				FFB6A62B299B0DF700A84F4E /* Constants.swift */,
+				FFB6A5E8299AECC800A84F4E /* Main.storyboard */,
+				FFB6A5EB299AECCD00A84F4E /* Assets.xcassets */,
+				FFB6A5ED299AECCD00A84F4E /* LaunchScreen.storyboard */,
+				FFB6A5F0299AECCD00A84F4E /* Info.plist */,
+			);
+			path = MeowFacts;
+			sourceTree = "<group>";
+		};
+		FFB6A5F8299AECCD00A84F4E /* MeowFactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFB6A5F9299AECCD00A84F4E /* MeowFactsTests.swift */,
+			);
+			path = MeowFactsTests;
+			sourceTree = "<group>";
+		};
+		FFB6A602299AECCD00A84F4E /* MeowFactsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFB6A603299AECCD00A84F4E /* MeowFactsUITests.swift */,
+				FFB6A605299AECCD00A84F4E /* MeowFactsUITestsLaunchTests.swift */,
+			);
+			path = MeowFactsUITests;
+			sourceTree = "<group>";
+		};
+		FFB6A612299AF13E00A84F4E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				FFB6A61F299AF2FC00A84F4E /* ViewController */,
+				FFB6A620299AF31100A84F4E /* Interactor */,
+				FFB6A621299AF32C00A84F4E /* Presenter */,
+				FFB6A628299AF3A400A84F4E /* Entity */,
+				FFB6A622299AF36400A84F4E /* Router */,
+				FFB6A623299AF36C00A84F4E /* Protocol */,
+				FFB6A62D299B10C800A84F4E /* MeowFactsNetworkingService.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		FFB6A61F299AF2FC00A84F4E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FFB6A624299AF39000A84F4E /* MeowFactsViewController.swift */,
+				FFB6A625299AF39000A84F4E /* MeowFactsViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FFB6A620299AF31100A84F4E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FFB6A617299AF26100A84F4E /* MeowFactsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FFB6A621299AF32C00A84F4E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FFB6A619299AF28100A84F4E /* MeowFactsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FFB6A622299AF36400A84F4E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FFB6A61B299AF2A000A84F4E /* MeowFactsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FFB6A623299AF36C00A84F4E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FFB6A61D299AF2BB00A84F4E /* MeowFactsProtocols.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		FFB6A628299AF3A400A84F4E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FFB6A629299AF3DA00A84F4E /* MeowFactsEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFB6A5DE299AECC800A84F4E /* MeowFacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB6A609299AECCD00A84F4E /* Build configuration list for PBXNativeTarget "MeowFacts" */;
+			buildPhases = (
+				FFB6A5DB299AECC800A84F4E /* Sources */,
+				FFB6A5DC299AECC800A84F4E /* Frameworks */,
+				FFB6A5DD299AECC800A84F4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeowFacts;
+			productName = MeowFacts;
+			productReference = FFB6A5DF299AECC800A84F4E /* MeowFacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFB6A5F4299AECCD00A84F4E /* MeowFactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB6A60C299AECCD00A84F4E /* Build configuration list for PBXNativeTarget "MeowFactsTests" */;
+			buildPhases = (
+				FFB6A5F1299AECCD00A84F4E /* Sources */,
+				FFB6A5F2299AECCD00A84F4E /* Frameworks */,
+				FFB6A5F3299AECCD00A84F4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFB6A5F7299AECCD00A84F4E /* PBXTargetDependency */,
+			);
+			name = MeowFactsTests;
+			productName = MeowFactsTests;
+			productReference = FFB6A5F5299AECCD00A84F4E /* MeowFactsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFB6A5FE299AECCD00A84F4E /* MeowFactsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB6A60F299AECCD00A84F4E /* Build configuration list for PBXNativeTarget "MeowFactsUITests" */;
+			buildPhases = (
+				FFB6A5FB299AECCD00A84F4E /* Sources */,
+				FFB6A5FC299AECCD00A84F4E /* Frameworks */,
+				FFB6A5FD299AECCD00A84F4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFB6A601299AECCD00A84F4E /* PBXTargetDependency */,
+			);
+			name = MeowFactsUITests;
+			productName = MeowFactsUITests;
+			productReference = FFB6A5FF299AECCD00A84F4E /* MeowFactsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFB6A5D7299AECC800A84F4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					FFB6A5DE299AECC800A84F4E = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					FFB6A5F4299AECCD00A84F4E = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = FFB6A5DE299AECC800A84F4E;
+					};
+					FFB6A5FE299AECCD00A84F4E = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = FFB6A5DE299AECC800A84F4E;
+					};
+				};
+			};
+			buildConfigurationList = FFB6A5DA299AECC800A84F4E /* Build configuration list for PBXProject "MeowFacts" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFB6A5D6299AECC800A84F4E;
+			productRefGroup = FFB6A5E0299AECC800A84F4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFB6A5DE299AECC800A84F4E /* MeowFacts */,
+				FFB6A5F4299AECCD00A84F4E /* MeowFactsTests */,
+				FFB6A5FE299AECCD00A84F4E /* MeowFactsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFB6A5DD299AECC800A84F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB6A627299AF39000A84F4E /* MeowFactsViewController.xib in Resources */,
+				FFB6A5EF299AECCD00A84F4E /* LaunchScreen.storyboard in Resources */,
+				FFB6A5EC299AECCD00A84F4E /* Assets.xcassets in Resources */,
+				FFB6A5EA299AECC800A84F4E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB6A5F3299AECCD00A84F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB6A5FD299AECCD00A84F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFB6A5DB299AECC800A84F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB6A626299AF39000A84F4E /* MeowFactsViewController.swift in Sources */,
+				FFB6A618299AF26100A84F4E /* MeowFactsInteractor.swift in Sources */,
+				FFB6A61E299AF2BB00A84F4E /* MeowFactsProtocols.swift in Sources */,
+				FFB6A61C299AF2A000A84F4E /* MeowFactsRouter.swift in Sources */,
+				FFB6A61A299AF28100A84F4E /* MeowFactsPresenter.swift in Sources */,
+				FFB6A5E3299AECC800A84F4E /* AppDelegate.swift in Sources */,
+				FFB6A62A299AF3DA00A84F4E /* MeowFactsEntity.swift in Sources */,
+				FFB6A5E5299AECC800A84F4E /* SceneDelegate.swift in Sources */,
+				FFB6A62E299B10C800A84F4E /* MeowFactsNetworkingService.swift in Sources */,
+				FFB6A62C299B0DF700A84F4E /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB6A5F1299AECCD00A84F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB6A5FA299AECCD00A84F4E /* MeowFactsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB6A5FB299AECCD00A84F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB6A606299AECCD00A84F4E /* MeowFactsUITestsLaunchTests.swift in Sources */,
+				FFB6A604299AECCD00A84F4E /* MeowFactsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFB6A5F7299AECCD00A84F4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFB6A5DE299AECC800A84F4E /* MeowFacts */;
+			targetProxy = FFB6A5F6299AECCD00A84F4E /* PBXContainerItemProxy */;
+		};
+		FFB6A601299AECCD00A84F4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFB6A5DE299AECC800A84F4E /* MeowFacts */;
+			targetProxy = FFB6A600299AECCD00A84F4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFB6A5E8299AECC800A84F4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB6A5E9299AECC800A84F4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFB6A5ED299AECCD00A84F4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB6A5EE299AECCD00A84F4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFB6A607299AECCD00A84F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFB6A608299AECCD00A84F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFB6A60A299AECCD00A84F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeowFacts/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.qi.zhan.MeowFacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFB6A60B299AECCD00A84F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeowFacts/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.qi.zhan.MeowFacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFB6A60D299AECCD00A84F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.qi.zhan.MeowFactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeowFacts.app/MeowFacts";
+			};
+			name = Debug;
+		};
+		FFB6A60E299AECCD00A84F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.qi.zhan.MeowFactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeowFacts.app/MeowFacts";
+			};
+			name = Release;
+		};
+		FFB6A610299AECCD00A84F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.qi.zhan.MeowFactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeowFacts;
+			};
+			name = Debug;
+		};
+		FFB6A611299AECCD00A84F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.qi.zhan.MeowFactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeowFacts;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFB6A5DA299AECC800A84F4E /* Build configuration list for PBXProject "MeowFacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB6A607299AECCD00A84F4E /* Debug */,
+				FFB6A608299AECCD00A84F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB6A609299AECCD00A84F4E /* Build configuration list for PBXNativeTarget "MeowFacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB6A60A299AECCD00A84F4E /* Debug */,
+				FFB6A60B299AECCD00A84F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB6A60C299AECCD00A84F4E /* Build configuration list for PBXNativeTarget "MeowFactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB6A60D299AECCD00A84F4E /* Debug */,
+				FFB6A60E299AECCD00A84F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB6A60F299AECCD00A84F4E /* Build configuration list for PBXNativeTarget "MeowFactsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB6A610299AECCD00A84F4E /* Debug */,
+				FFB6A611299AECCD00A84F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFB6A5D7299AECC800A84F4E /* Project object */;
+}
