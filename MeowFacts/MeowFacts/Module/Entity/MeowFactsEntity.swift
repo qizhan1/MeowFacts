@@ -7,10 +7,6 @@
 
 import Foundation
 
-struct MeowFactsResponse: Codable {
-    
-}
-
 struct MeowFact: Codable {
     let data: [String]
 }

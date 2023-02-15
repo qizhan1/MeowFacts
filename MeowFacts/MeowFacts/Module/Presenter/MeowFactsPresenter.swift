@@ -29,26 +29,13 @@ class MeowFactsPresenter: MeowFactsViewToPresenterProtocol{
 
 extension MeowFactsPresenter: MeowFactsInteractorToPresenterProtocol {
     
-    func KittenImageDidFetch() {
-        
+    func meowFactsDidFetch() {
+        view?.showKitten(image: interactor?.kittenImage,
+                         with: interactor?.meowFact?.data[0])
     }
     
-    func KittenImageFetchFailed() {
-        
-    }
-    
-    func MeowFactsDidFetch() {
-        DispatchQueue.main.async { [weak self] in
-            self?.view?.showKitten()
-        }
-        
-    }
-    
-    func MeowFactsFetchFailed() {
-        DispatchQueue.main.async { [weak self] in
-            self?.view?.showError()
-        }
-        
+    func meowFactsFetchDidFail(with errorMessage: String?) {
+        view?.showError(message: errorMessage)
     }
     
 

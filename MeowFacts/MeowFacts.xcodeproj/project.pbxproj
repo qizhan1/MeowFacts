@@ -24,6 +24,7 @@
 		FFB6A62A299AF3DA00A84F4E /* MeowFactsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A629299AF3DA00A84F4E /* MeowFactsEntity.swift */; };
 		FFB6A62C299B0DF700A84F4E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A62B299B0DF700A84F4E /* Constants.swift */; };
 		FFB6A62E299B10C800A84F4E /* MeowFactsNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A62D299B10C800A84F4E /* MeowFactsNetworkingService.swift */; };
+		FFB6A798299C707900A84F4E /* kittenImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FFB6A797299C707900A84F4E /* kittenImage.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		FFB6A629299AF3DA00A84F4E /* MeowFactsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsEntity.swift; sourceTree = "<group>"; };
 		FFB6A62B299B0DF700A84F4E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FFB6A62D299B10C800A84F4E /* MeowFactsNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsNetworkingService.swift; sourceTree = "<group>"; };
+		FFB6A797299C707900A84F4E /* kittenImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kittenImage.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		FFB6A5F8299AECCD00A84F4E /* MeowFactsTests */ = {
 			isa = PBXGroup;
 			children = (
+				FFB6A797299C707900A84F4E /* kittenImage.jpeg */,
 				FFB6A5F9299AECCD00A84F4E /* MeowFactsTests.swift */,
 			);
 			path = MeowFactsTests;
@@ -147,12 +150,12 @@
 		FFB6A612299AF13E00A84F4E /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				FFB6A61F299AF2FC00A84F4E /* ViewController */,
+				FFB6A628299AF3A400A84F4E /* Entity */,
 				FFB6A620299AF31100A84F4E /* Interactor */,
 				FFB6A621299AF32C00A84F4E /* Presenter */,
-				FFB6A628299AF3A400A84F4E /* Entity */,
-				FFB6A622299AF36400A84F4E /* Router */,
 				FFB6A623299AF36C00A84F4E /* Protocol */,
+				FFB6A622299AF36400A84F4E /* Router */,
+				FFB6A61F299AF2FC00A84F4E /* ViewController */,
 				FFB6A62D299B10C800A84F4E /* MeowFactsNetworkingService.swift */,
 			);
 			path = Module;
@@ -322,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB6A798299C707900A84F4E /* kittenImage.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

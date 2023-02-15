@@ -8,23 +8,23 @@
 import Foundation
 import UIKit
 
-enum NetworkServiceError: Error {
-    case failure
-    case badImage
-}
-
-struct NetworkService {
+class KittenNetworkService: KittenNetworkServiceProtocol {
+    
+    enum NetworkServiceError: Error {
+        case failed
+        case badImage
+    }
+    
     var session = URLSession.shared
     
     func fetchMeowFact() async throws -> MeowFact {
         guard let url = URL(string: Constants.meowFactsURLStr) else {
             fatalError("Missing URL")
         }
-        
         let urlRequest = URLRequest(url: url)
         let (data, response) = try await session.data(for: urlRequest )
         guard (response as? HTTPURLResponse)?.statusCode == 200 else {
-            throw NetworkServiceError.failure
+            throw NetworkServiceError.failed
         }
         
         return try JSONDecoder().decode(MeowFact.self, from: data)
@@ -40,9 +40,9 @@ struct NetworkService {
         let urlRequest = URLRequest(url: url)
         let (data, response) = try await session.data(for: urlRequest)
         guard (response as? HTTPURLResponse)?.statusCode == 200 else {
-            throw  NetworkServiceError.badImage// todo: throw errors
+            throw  NetworkServiceError.badImage
         }
-        return UIImage(data: data)
         
+        return UIImage(data: data)
     }
 }

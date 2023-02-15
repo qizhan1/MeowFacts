@@ -50,16 +50,20 @@ extension MeowFactsViewController: MeowFactsPresenterToViewProtocol {
     
     // Why @MainActor doesn't work here? only dispatch queue works
     // Is it because of UIViewController?
-    func showKitten() {
-        let cat = presenter?.getMeowFacts()
-        meowFactsLabel.text = cat?.fact
-        imageView.image = cat?.image
-        stopLoading()
+    func showKitten(image: UIImage?, with fact: String?) {
+        DispatchQueue.main.async { [weak self] in
+            self?.meowFactsLabel.text = fact
+            self?.imageView.image = image
+            self?.stopLoading()
+        }
     }
     
-    @MainActor
-    func showError() {
-        
+    //@MainActor
+    func showError(message: String?) {
+        stopLoading()
+        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default))
+        self.present(alert, animated: true)
     }
     
 }

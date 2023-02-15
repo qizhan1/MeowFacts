@@ -12,17 +12,22 @@ class MeowFactsInteractor: MeowFactsPresenterToInteractorProtocol {
     
     weak var presenter: MeowFactsInteractorToPresenterProtocol?
     
+    var networkService: KittenNetworkServiceProtocol
     var meowFact: MeowFact?
     var kittenImage: UIImage?
+    
+    init(kittenNetworkService: KittenNetworkServiceProtocol) {
+        networkService = kittenNetworkService
+    }
     
     func fetchKitten()   {
         Task.detached { [weak self] in
             do {
-                self?.meowFact = try await NetworkService().fetchMeowFact()
-                self?.kittenImage = try await NetworkService().fetchKittenImage()
-                self?.presenter?.MeowFactsDidFetch()
+                self?.meowFact = try await self?.networkService.fetchMeowFact()
+                self?.kittenImage = try await self?.networkService.fetchKittenImage()
+                self?.presenter?.meowFactsDidFetch()
             } catch {
-                self?.presenter?.MeowFactsFetchFailed()
+                self?.presenter?.meowFactsFetchDidFail(with: "\(error)")
             }
         }
          

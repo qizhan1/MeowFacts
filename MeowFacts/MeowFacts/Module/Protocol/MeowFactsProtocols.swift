@@ -9,15 +9,13 @@ import Foundation
 import UIKit
 
 protocol MeowFactsPresenterToViewProtocol: AnyObject {
-    func showKitten()
-    func showError()
+    func showKitten(image: UIImage?, with fact: String?)
+    func showError(message: String?)
 }
 
 protocol MeowFactsInteractorToPresenterProtocol: AnyObject {
-    func KittenImageDidFetch()
-    func KittenImageFetchFailed()
-    func MeowFactsDidFetch()
-    func MeowFactsFetchFailed()
+    func meowFactsDidFetch()
+    func meowFactsFetchDidFail(with errorMessage: String?)
 }
 
 protocol MeowFactsPresenterToInteractorProtocol: AnyObject {
@@ -39,4 +37,9 @@ protocol MeowFactsViewToPresenterProtocol: AnyObject {
 
 protocol MeowFactsPresenterToRouterProtocol: AnyObject {
     static func createModule() -> UIViewController
+}
+
+protocol KittenNetworkServiceProtocol: AnyObject {
+    func fetchMeowFact() async throws -> MeowFact
+    func fetchKittenImage() async throws -> UIImage?
 }

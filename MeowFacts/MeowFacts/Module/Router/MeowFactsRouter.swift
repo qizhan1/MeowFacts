@@ -13,7 +13,8 @@ class MeowFactsRouter: MeowFactsPresenterToRouterProtocol {
     static func createModule() -> UIViewController {
         let view = MeowFactsViewController()
         let presenter: MeowFactsInteractorToPresenterProtocol & MeowFactsViewToPresenterProtocol = MeowFactsPresenter()
-        let interactor: MeowFactsPresenterToInteractorProtocol = MeowFactsInteractor()
+        let networkService = KittenNetworkService()
+        let interactor: MeowFactsPresenterToInteractorProtocol = MeowFactsInteractor(kittenNetworkService: networkService)
         let router: MeowFactsPresenterToRouterProtocol = MeowFactsRouter()
         
         view.presenter = presenter
