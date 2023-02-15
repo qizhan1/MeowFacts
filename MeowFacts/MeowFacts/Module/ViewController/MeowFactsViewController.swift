@@ -57,10 +57,12 @@ extension MeowFactsViewController: MeowFactsPresenterToViewProtocol {
     }
     
     func showError(message: String?) {
-        stopLoading()
-        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Okay", style: .default))
-        self.present(alert, animated: true)
+        DispatchQueue.main.async { [weak self] in
+            self?.stopLoading()
+            let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default))
+            self?.present(alert, animated: true)
+        }
     }
     
 }
