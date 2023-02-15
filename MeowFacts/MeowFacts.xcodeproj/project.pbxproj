@@ -12,7 +12,7 @@
 		FFB6A5EA299AECC800A84F4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB6A5E8299AECC800A84F4E /* Main.storyboard */; };
 		FFB6A5EC299AECCD00A84F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB6A5EB299AECCD00A84F4E /* Assets.xcassets */; };
 		FFB6A5EF299AECCD00A84F4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB6A5ED299AECCD00A84F4E /* LaunchScreen.storyboard */; };
-		FFB6A5FA299AECCD00A84F4E /* MeowFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A5F9299AECCD00A84F4E /* MeowFactsTests.swift */; };
+		FFB6A5FA299AECCD00A84F4E /* MeowFactsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A5F9299AECCD00A84F4E /* MeowFactsPresenterTests.swift */; };
 		FFB6A604299AECCD00A84F4E /* MeowFactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A603299AECCD00A84F4E /* MeowFactsUITests.swift */; };
 		FFB6A606299AECCD00A84F4E /* MeowFactsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A605299AECCD00A84F4E /* MeowFactsUITestsLaunchTests.swift */; };
 		FFB6A618299AF26100A84F4E /* MeowFactsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A617299AF26100A84F4E /* MeowFactsInteractor.swift */; };
@@ -25,6 +25,8 @@
 		FFB6A62C299B0DF700A84F4E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A62B299B0DF700A84F4E /* Constants.swift */; };
 		FFB6A62E299B10C800A84F4E /* MeowFactsNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A62D299B10C800A84F4E /* MeowFactsNetworkingService.swift */; };
 		FFB6A798299C707900A84F4E /* kittenImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FFB6A797299C707900A84F4E /* kittenImage.jpeg */; };
+		FFB6A79A299C89C400A84F4E /* MeowFactsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A799299C89C400A84F4E /* MeowFactsInteractorTests.swift */; };
+		FFB6A79C299C99F000A84F4E /* KittenNetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6A79B299C99F000A84F4E /* KittenNetworkServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +55,7 @@
 		FFB6A5EE299AECCD00A84F4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFB6A5F0299AECCD00A84F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB6A5F5299AECCD00A84F4E /* MeowFactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeowFactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFB6A5F9299AECCD00A84F4E /* MeowFactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsTests.swift; sourceTree = "<group>"; };
+		FFB6A5F9299AECCD00A84F4E /* MeowFactsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsPresenterTests.swift; sourceTree = "<group>"; };
 		FFB6A5FF299AECCD00A84F4E /* MeowFactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeowFactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB6A603299AECCD00A84F4E /* MeowFactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsUITests.swift; sourceTree = "<group>"; };
 		FFB6A605299AECCD00A84F4E /* MeowFactsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -67,6 +69,8 @@
 		FFB6A62B299B0DF700A84F4E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FFB6A62D299B10C800A84F4E /* MeowFactsNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsNetworkingService.swift; sourceTree = "<group>"; };
 		FFB6A797299C707900A84F4E /* kittenImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kittenImage.jpeg; sourceTree = "<group>"; };
+		FFB6A799299C89C400A84F4E /* MeowFactsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsInteractorTests.swift; sourceTree = "<group>"; };
+		FFB6A79B299C99F000A84F4E /* KittenNetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenNetworkServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				FFB6A797299C707900A84F4E /* kittenImage.jpeg */,
-				FFB6A5F9299AECCD00A84F4E /* MeowFactsTests.swift */,
+				FFB6A799299C89C400A84F4E /* MeowFactsInteractorTests.swift */,
+				FFB6A79B299C99F000A84F4E /* KittenNetworkServiceTests.swift */,
+				FFB6A5F9299AECCD00A84F4E /* MeowFactsPresenterTests.swift */,
 			);
 			path = MeowFactsTests;
 			sourceTree = "<group>";
@@ -360,7 +366,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB6A5FA299AECCD00A84F4E /* MeowFactsTests.swift in Sources */,
+				FFB6A79C299C99F000A84F4E /* KittenNetworkServiceTests.swift in Sources */,
+				FFB6A79A299C89C400A84F4E /* MeowFactsInteractorTests.swift in Sources */,
+				FFB6A5FA299AECCD00A84F4E /* MeowFactsPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

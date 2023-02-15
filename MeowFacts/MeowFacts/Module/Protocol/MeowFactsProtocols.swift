@@ -20,7 +20,7 @@ protocol MeowFactsInteractorToPresenterProtocol: AnyObject {
 
 protocol MeowFactsPresenterToInteractorProtocol: AnyObject {
     var presenter: MeowFactsInteractorToPresenterProtocol? { get set }
-    var meowFact: MeowFact? { get } // - TODO
+    var meowFact: MeowFact? { get }
     var kittenImage: UIImage? { get }
     
     func fetchKitten()

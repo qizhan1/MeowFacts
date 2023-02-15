@@ -27,7 +27,7 @@ class MeowFactsInteractor: MeowFactsPresenterToInteractorProtocol {
                 self?.kittenImage = try await self?.networkService.fetchKittenImage()
                 self?.presenter?.meowFactsDidFetch()
             } catch {
-                self?.presenter?.meowFactsFetchDidFail(with: "\(error)")
+                self?.presenter?.meowFactsFetchDidFail(with: error.localizedDescription)
             }
         }
          

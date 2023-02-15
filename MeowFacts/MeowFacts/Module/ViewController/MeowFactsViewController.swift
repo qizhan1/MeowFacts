@@ -10,7 +10,7 @@ import UIKit
 class MeowFactsViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var meowFactsLabel: UILabel!
+    @IBOutlet weak var textView: UITextView!
     
     lazy var activityView: UIActivityIndicatorView = UIActivityIndicatorView(style: .large)
     var presenter: MeowFactsViewToPresenterProtocol?
@@ -18,7 +18,8 @@ class MeowFactsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        meowFactsLabel.numberOfLines = 0
+        imageView.contentMode = .scaleAspectFit
+        
         startLoading()
         presenter?.updateView()
         
@@ -45,20 +46,16 @@ class MeowFactsViewController: UIViewController {
     
 }
 
-
 extension MeowFactsViewController: MeowFactsPresenterToViewProtocol {
     
-    // Why @MainActor doesn't work here? only dispatch queue works
-    // Is it because of UIViewController?
     func showKitten(image: UIImage?, with fact: String?) {
         DispatchQueue.main.async { [weak self] in
-            self?.meowFactsLabel.text = fact
+            self?.textView.text = fact
             self?.imageView.image = image
             self?.stopLoading()
         }
     }
     
-    //@MainActor
     func showError(message: String?) {
         stopLoading()
         let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)

@@ -20,10 +20,8 @@ class MeowFactsPresenter: MeowFactsViewToPresenterProtocol{
     }
     
     func getMeowFacts() -> (fact: String?, image: UIImage?) {
-        // TODO: check if meowFact? is empty, if it is, will crash
         return (interactor?.meowFact?.data[0], interactor?.kittenImage)
     }
-    
     
 }
 

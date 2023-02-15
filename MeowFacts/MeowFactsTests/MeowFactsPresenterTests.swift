@@ -43,32 +43,13 @@ class MeowFactsPresenterTests: XCTestCase {
     
     func testUpdateView() {
         presenter.updateView()
-        XCTAssertTrue(view.isUpdateViewCalled, "updateView function is not called")
+        XCTAssertTrue(view.didCallUpdateView, "updateView function is not called")
     }
     
     func testFetchKitten() {
         interactor.fetchKitten()
         XCTAssertNotNil(interactor.meowFact)
         XCTAssertNotNil(interactor.kittenImage)
-    }
-    
-    func testFetchKittenDidFail() {
-        
-    }
-    
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
     }
 
 }
@@ -86,23 +67,11 @@ class MeowFactsInteractorMock: MeowFactsPresenterToInteractorProtocol {
     }
     
     func fetchKitten() {
-        
         meowFact = MeowFact(data: ["Besides smelling with their nose, cats can smell with an additional organ called the Jacobson's organ, located in the upper surface of the mouth."])
         let bundle = Bundle(for: MeowFactsInteractorMock.self)
         let path = bundle.path(forResource: "kittenImage", ofType: "jpeg")
         kittenImage = UIImage(contentsOfFile: path ?? "")
         presenter?.meowFactsDidFetch()
-        
-        // TODO: how to test async/await?
-//        Task { [weak self] in
-//            do {
-//                self?.kittenImage = try await self?.networkService?.fetchKittenImage()
-//                self?.meowFact = try await self?.networkService?.fetchMeowFact()
-//                self?.presenter?.meowFactsDidFetch()
-//            } catch {
-//                self?.presenter?.meowFactsFetchDidFail(with: "\(error)")
-//            }
-//        }
     }
 
 }
@@ -112,12 +81,12 @@ class MeowFactsViewMock: MeowFactsPresenterToViewProtocol {
     var meowFact: String?
     var kittenImage: UIImage?
     var errorMessage: String?
-    var isUpdateViewCalled: Bool = false
+    var didCallUpdateView: Bool = false
     
     func showKitten(image: UIImage?, with fact: String?) {
         meowFact = fact
         kittenImage = image
-        isUpdateViewCalled = true
+        didCallUpdateView = true
     }
     
     func showError(message: String?) {
@@ -128,13 +97,24 @@ class MeowFactsViewMock: MeowFactsPresenterToViewProtocol {
     
 }
 
-// TODO: how to test async/await?
 class KittenNetworkServiceMock: KittenNetworkServiceProtocol {
+    
+    var mockSuccessData = MeowFact(data: ["Besides smelling with their nose, cats can smell with an additional organ called the Jacobson's organ, located in the upper surface of the mouth."])
+    var mockError: Error?
+    
     func fetchMeowFact() async throws -> MeowFact {
-        return MeowFact(data: ["Besides smelling with their nose, cats can smell with an additional organ called the Jacobson's organ, located in the upper surface of the mouth."])
+        if let error = mockError {
+            throw error
+        }
+        
+        return mockSuccessData
     }
     
     func fetchKittenImage() async throws -> UIImage? {
+        if let error = mockError {
+            throw error
+        }
+        
         let bundle = Bundle(for: MeowFactsInteractorMock.self)
         let path = bundle.path(forResource: "kittenImage", ofType: "jpeg")
         return UIImage(contentsOfFile: path ?? "")

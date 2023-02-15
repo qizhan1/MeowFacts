@@ -8,6 +8,12 @@
 import Foundation
 import UIKit
 
+protocol Networking {
+    func data(for request: URLRequest, delegate: URLSessionTaskDelegate?) async throws -> (Data, URLResponse)
+}
+
+extension URLSession: Networking {}
+
 class KittenNetworkService: KittenNetworkServiceProtocol {
     
     enum NetworkServiceError: Error {
@@ -15,14 +21,18 @@ class KittenNetworkService: KittenNetworkServiceProtocol {
         case badImage
     }
     
-    var session = URLSession.shared
+    let session: Networking
+    
+    init(session: Networking = URLSession.shared) {
+        self.session = session
+    }
     
     func fetchMeowFact() async throws -> MeowFact {
         guard let url = URL(string: Constants.meowFactsURLStr) else {
             fatalError("Missing URL")
         }
         let urlRequest = URLRequest(url: url)
-        let (data, response) = try await session.data(for: urlRequest )
+        let (data, response) = try await session.data(for: urlRequest, delegate: nil )
         guard (response as? HTTPURLResponse)?.statusCode == 200 else {
             throw NetworkServiceError.failed
         }
@@ -38,7 +48,7 @@ class KittenNetworkService: KittenNetworkServiceProtocol {
             fatalError("Missing URL")
         }
         let urlRequest = URLRequest(url: url)
-        let (data, response) = try await session.data(for: urlRequest)
+        let (data, response) = try await session.data(for: urlRequest, delegate: nil)
         guard (response as? HTTPURLResponse)?.statusCode == 200 else {
             throw  NetworkServiceError.badImage
         }

@@ -14,8 +14,8 @@
             filePath = "MeowFacts/Module/Interactor/MeowFactsInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "fetchKitten()"
             landmarkType = "7">
             <Locations>
@@ -77,8 +77,8 @@
             filePath = "MeowFacts/Module/ViewController/MeowFactsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "showKitten(image:with:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -93,8 +93,8 @@
             filePath = "MeowFacts/Module/MeowFactsNetworkingService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "fetchKittenImage()"
             landmarkType = "7">
          </BreakpointContent>
@@ -109,8 +109,8 @@
             filePath = "MeowFacts/Module/MeowFactsNetworkingService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "fetchKittenImage()"
             landmarkType = "7">
             <Locations>
@@ -208,22 +208,6 @@
             startingLineNumber = "19"
             endingLineNumber = "19"
             landmarkName = "updateView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AAB106AE-30BF-444E-AEC9-AD9C80A041ED"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MeowFacts/Module/Interactor/MeowFactsInteractor.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "fetchKitten()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

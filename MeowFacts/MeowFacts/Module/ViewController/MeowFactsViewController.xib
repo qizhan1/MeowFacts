@@ -11,7 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeowFactsViewController" customModule="MeowFacts" customModuleProvider="target">
             <connections>
                 <outlet property="imageView" destination="z4k-Rf-TiK" id="Zw3-XT-Zih"/>
-                <outlet property="meowFactsLabel" destination="3sp-SG-qcM" id="HTc-49-INL"/>
+                <outlet property="textView" destination="M0H-7C-dRY" id="Ylv-kd-jox"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,28 +20,36 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MeowFacts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sp-SG-qcM">
-                    <rect key="frame" x="20" y="752" width="374" height="110"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z4k-Rf-TiK">
-                    <rect key="frame" x="20" y="81" width="374" height="656"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z4k-Rf-TiK">
+                    <rect key="frame" x="20" y="52" width="374" height="700"/>
                 </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M0H-7C-dRY">
+                    <rect key="frame" x="20" y="769" width="374" height="105"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3sp-SG-qcM" secondAttribute="trailing" constant="20" id="2m5-vx-4lP"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3sp-SG-qcM" secondAttribute="bottom" id="dP8-FB-88w"/>
-                <constraint firstItem="3sp-SG-qcM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="okK-90-vxm"/>
+                <constraint firstItem="M0H-7C-dRY" firstAttribute="height" secondItem="z4k-Rf-TiK" secondAttribute="height" multiplier="0.15" id="7Jg-Q8-j2R"/>
+                <constraint firstItem="M0H-7C-dRY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="bHw-lG-0vd"/>
+                <constraint firstItem="z4k-Rf-TiK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="bbR-gA-UXl"/>
+                <constraint firstItem="M0H-7C-dRY" firstAttribute="top" secondItem="z4k-Rf-TiK" secondAttribute="bottom" constant="17" id="brN-cI-Nn7"/>
+                <constraint firstItem="z4k-Rf-TiK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gsc-6J-Jmf"/>
+                <constraint firstItem="M0H-7C-dRY" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="12" id="pWZ-2m-WQG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="z4k-Rf-TiK" secondAttribute="trailing" constant="20" id="t6J-1M-LrH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="M0H-7C-dRY" secondAttribute="trailing" constant="20" id="viD-RC-gbc"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
